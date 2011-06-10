@@ -125,3 +125,5 @@ hr { background:#eee none repeat scroll 0% 0%; }
   display: none;
 }
 
+.CodeRay .no { display: none; }
+
