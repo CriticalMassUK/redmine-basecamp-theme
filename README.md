@@ -1,6 +1,6 @@
-A Basecame theme for Redmine.
+A Basecamp theme for Redmine.
 
-Thanks to Henry Todd for patches.
+This fork features slight cosmetic tweaks including a glorious magenta header.
 
 INSTALL
 -------
@@ -8,4 +8,4 @@ INSTALL
 To install, just clone into your Redmine theme dir like so:
 
     $ cd /path/to/redmine/public/themes
-    $ git clone http://github.com/albion/redmine-basecamp-theme.git basecamp
+    $ git clone http://github.com/bluefuton/redmine-basecamp-theme.git basecamp
