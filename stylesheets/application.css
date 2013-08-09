@@ -20,7 +20,10 @@ a:hover, a:active { color: #2A5685; }
 #top-menu li a { color: #999; font-weight: normal; padding:4px 5px; }
 #top-menu li a:hover { color: #fff; text-decoration: none; }
 #main { background: #EEEEEE; margin: 8px 24px 0px 24px; }
-#content { background: #fff; border-right: 1px solid #bbb; border-bottom: 1px solid #bbb; width: 70%; overflow: auto; }
+#content, #main.nosidebar #content { background: #fff; border-right: 1px solid #bbb; border-bottom: 1px solid #bbb; overflow: auto; -moz-box-shadow: #bbb 1px 1px 2px; -webkit-box-shadow: 1px 1px 2px #bbb; }
+#content { width: 70%; }
+#content .wiki img { max-width: 98%; }
+#main.nosidebar #content { width: auto; }
 #sidebar { width: 26%; }
 #footer { background-color:#EEEEEE; border: 0px; clear: left; color:#666666; font-size:9px; margin:4px 0 20px 20px; padding-bottom:15px; text-align:left; }
 #footer a:hover { background:#666666 none repeat scroll 0 0; color:#FFFFFF !important;}
@@ -52,7 +55,7 @@ h3, h4 { font-weight: normal; }
 /* Tables */
 table.list { border: none; }
 table.list th { background-color: #fff; }
-table.list tbody td, table.list tbody tr td { border-bottom: solid 1px #ddd; font-size: 11px; padding:4px 10px 4px 3px; }
+table.list tbody td, table.list tbody tr td, table.list tbody tr td.checkbox { border-bottom: solid 1px #ddd; font-size: 11px; padding:4px 10px 4px 3px; }
 table.list thead th {
 	border: none;
 	border-bottom:1px solid #999999;
@@ -68,33 +71,37 @@ table.list thead th a:hover { color: #000; }
 /* Issues grid styles by priorities (provided by Wynn Netherland) */
 table.list tr.issue a { color: #333; }
 
-tr.odd.priority-5, table.list tbody tr.odd.priority-5:hover { color: #900; font-weight: bold; }
-tr.odd.priority-5 { background: #ffc4c4; }
-tr.even.priority-5, table.list tbody tr.even.priority-5:hover { color: #900; font-weight: bold; }
-tr.even.priority-5 { background: #ffd4d4; }
-tr.priority-5 a, tr.priority-5:hover a { color: #900; }
-tr.odd.priority-5 td, tr.even.priority-5 td { border-color: #ffb4b4; }
+/*adjust the css according to your priority ids, for Redmine 2.1*/
+table.list td:hover { opacity: 0.8; cursor: pointer; }
 
-tr.odd.priority-4, table.list tbody tr.odd.priority-4:hover { color: #900; }
-tr.odd.priority-4 { background: #ffc4c4; }
-tr.even.priority-4, table.list tbody tr.even.priority-4:hover { color: #900; }
-tr.even.priority-4 { background: #ffd4d4; }
-tr.priority-4 a { color: #900; }
-tr.odd.priority-4 td, tr.even.priority-4 td { border-color: #ffb4b4; }
+tr.odd.priority-highest, table.list tbody tr.odd.priority-highest:hover { color: #900; font-weight: bold; }
+tr.odd.priority-highest { background: #ffc4c4; }
+tr.even.priority-highest, table.list tbody tr.even.priority-highest:hover { color: #900; font-weight: bold; }
+tr.even.priority-highest { background: #ffd4d4; }
+tr.priority-highest a, tr.priority-highest:hover a { color: #900; }
+tr.odd.priority-highest td, tr.even.priority-highest td { border-color: #ffb4b4; }
 
-tr.odd.priority-3, table.list tbody tr.odd.priority-3:hover { color: #900; }
-tr.odd.priority-3 { background: #fee; }
-tr.even.priority-3, table.list tbody tr.even.priority-3:hover { color: #900; }
-tr.even.priority-3 { background: #fff2f2; }
-tr.priority-3 a { color: #900; }
-tr.odd.priority-3 td, tr.even.priority-3 td { border-color: #fcc; }
+tr.odd.priority-high2, table.list tbody tr.odd.priority-high2:hover { color: #a65a00; font-weight: bold; }
+tr.odd.priority-high2 { background: #FFD073; }
+tr.even.priority-high2, table.list tbody tr.even.priority-high2:hover { color: #a65a00; font-weight: bold; }
+tr.even.priority-high2 { background: #FEDD9B }
+tr.priority-high2 a, tr.priority-high2:hover a { color: #a65a00; }
+tr.odd.priority-high2 td, tr.even.priority-high2 td { border-color: #ff8300; }
 
-tr.odd.priority-1, table.list tbody tr.odd.priority-1:hover { color: #559; }
-tr.odd.priority-1 { background: #eaf7ff; }
-tr.even.priority-1, table.list tbody tr.even.priority-1:hover { color: #559; }
-tr.even.priority-1 { background: #f2faff; }
-tr.priority-1 a { color: #559; }
-tr.odd.priority-1 td, tr.even.priority-1 td { border-color: #add7f3; }
+tr.odd.priority-default, table.list tbody tr.odd.priority-default:hover { color: #444; }
+tr.odd.priority-default { background: #FFFFCC; }
+tr.odd.priority-default { background: #ffc; }
+tr.even.priority-default, table.list tbody tr.even.priority-default:hover { color: #444; }
+tr.even.priority-default { background: #ffc; }
+tr.priority-default a { color: #222; }
+tr.odd.priority-default td, tr.even.priority-default td { border-color: #add7f3; }
+
+tr.odd.priority-low2, table.list tbody tr.odd.priority-low2:hover { color: #559; }
+tr.odd.priority-low2 { background: #eaf7ff; }
+tr.even.priority-low2, table.list tbody tr.even.priority-low2:hover { color: #559; }
+tr.even.priority-low2 { background: #f2faff; }
+tr.priority-low2 a { color: #559; }
+tr.odd.priority-low2 td, tr.even.priority-low2 td { border-color: #add7f3; }
 
 p.breadcrumb {
 	background-color:#EEEEEE;
