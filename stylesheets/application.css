@@ -72,9 +72,6 @@ table.list thead th a:hover { color: #000; }
 table.list tr.issue a { color: #333; }
 
 /*adjust the css according to your priority ids, for Redmine 2.1*/
-table.list tr { opacity: 0.8; }
-table.list tr:hover { opacity: 1; cursor: pointer; }
-
 tr.odd.priority-highest, table.list tbody tr.odd.priority-highest:hover { color: #900; font-weight: bold; }
 tr.odd.priority-highest { background: #ffc4c4; }
 tr.even.priority-highest, table.list tbody tr.even.priority-highest:hover { color: #900; font-weight: bold; }
@@ -82,26 +79,26 @@ tr.even.priority-highest { background: #ffd4d4; }
 tr.priority-highest a, tr.priority-highest:hover a { color: #900; }
 tr.odd.priority-highest td, tr.even.priority-highest td { border-color: #ffb4b4; }
 
-tr.odd.priority-high2, table.list tbody tr.odd.priority-high2:hover { color: #a65a00; font-weight: bold; }
-tr.odd.priority-high2 { background: #FFD073; }
-tr.even.priority-high2, table.list tbody tr.even.priority-high2:hover { color: #a65a00; font-weight: bold; }
-tr.even.priority-high2 { background: #FEDD9B }
-tr.priority-high2 a, tr.priority-high2:hover a { color: #a65a00; }
-tr.odd.priority-high2 td, tr.even.priority-high2 td { border-color: #e4e4e4; }
+tr.odd.priority-high2, table.list tbody tr.odd.priority-high2:hover { color: #900; }
+tr.odd.priority-high2 { background: #ffc4c4; }
+tr.even.priority-high2, table.list tbody tr.even.priority-high2:hover { color: #900; }
+tr.even.priority-high2 { background: #ffd4d4; }
+tr.priority-high2 a { color: #900; }
+tr.odd.priority-high2 td, tr.even.priority-high2 td { border-color: #ffb4b4; }
 
-tr.odd.priority-default, table.list tbody tr.odd.priority-default:hover { color: #444; }
-tr.odd.priority-default { background: #ffc; }
-tr.even.priority-default, table.list tbody tr.even.priority-default:hover { color: #444; }
-tr.even.priority-default { background: #ffc; }
-tr.priority-default a { color: #222; }
-tr.odd.priority-default td, tr.even.priority-default td { border-color: #e4e4e4; }
+tr.odd.priority-default, table.list tbody tr.odd.priority-default:hover { color: #900; }
+tr.odd.priority-default { background: #fee; }
+tr.even.priority-default, table.list tbody tr.even.priority-default:hover { color: #900; }
+tr.even.priority-default { background: #fff2f2; }
+tr.priority-default a { color: #900; }
+tr.odd.priority-default td, tr.even.priority-default td { border-color: #fcc; }
 
-tr.odd.priority-low2, table.list tbody tr.odd.priority-low2:hover { color: #559; }
-tr.odd.priority-low2 { background: #eaf7ff; }
-tr.even.priority-low2, table.list tbody tr.even.priority-low2:hover { color: #559; }
-tr.even.priority-low2 { background: #f2faff; }
-tr.priority-low2 a { color: #559; }
-tr.odd.priority-low2 td, tr.even.priority-low2 td { border-color: #e4e4e4; }
+tr.odd.priority-lowest, table.list tbody tr.odd.priority-lowest:hover { color: #559; }
+tr.odd.priority-lowest { background: #eaf7ff; }
+tr.even.priority-lowest, table.list tbody tr.even.priority-lowest:hover { color: #559; }
+tr.even.priority-lowest { background: #f2faff; }
+tr.priority-lowest a { color: #559; }
+tr.odd.priority-lowest td, tr.even.priority-lowest td { border-color: #add7f3; }
 
 p.breadcrumb {
 	background-color:#EEEEEE;
