@@ -72,7 +72,7 @@ table.list thead th a:hover { color: #000; }
 table.list tr.issue a { color: #333; }
 
 /*adjust the css according to your priority ids, for Redmine 2.1*/
-table.list td { opacity: 0.9; }
+table.list td { opacity: 0.8; }
 table.list td:hover { opacity: 1; cursor: pointer; }
 
 tr.odd.priority-highest, table.list tbody tr.odd.priority-highest:hover { color: #900; font-weight: bold; }
@@ -90,9 +90,9 @@ tr.priority-high2 a, tr.priority-high2:hover a { color: #a65a00; }
 tr.odd.priority-high2 td, tr.even.priority-high2 td { border-color: #e4e4e4; }
 
 tr.odd.priority-default, table.list tbody tr.odd.priority-default:hover { color: #444; }
-tr.odd.priority-default { background: #ffe673; }
+tr.odd.priority-default { background: #ffc; }
 tr.even.priority-default, table.list tbody tr.even.priority-default:hover { color: #444; }
-tr.even.priority-default { background: #ffe673; }
+tr.even.priority-default { background: #ffc; }
 tr.priority-default a { color: #222; }
 tr.odd.priority-default td, tr.even.priority-default td { border-color: #e4e4e4; }
 
