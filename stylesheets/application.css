@@ -72,8 +72,8 @@ table.list thead th a:hover { color: #000; }
 table.list tr.issue a { color: #333; }
 
 /*adjust the css according to your priority ids, for Redmine 2.1*/
-table.list td { opacity: 0.8; }
-table.list td:hover { opacity: 1; cursor: pointer; }
+table.list tr { opacity: 0.8; }
+table.list tr:hover { opacity: 1; cursor: pointer; }
 table.list tbody tr:hover { background-color: inherit; }
 
 tr.odd.priority-highest, table.list tbody tr.odd.priority-highest:hover { color: #900; font-weight: bold; }
