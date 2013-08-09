@@ -79,14 +79,14 @@ tr.odd.priority-highest { background: #ffc4c4; }
 tr.even.priority-highest, table.list tbody tr.even.priority-highest:hover { color: #900; font-weight: bold; }
 tr.even.priority-highest { background: #ffd4d4; }
 tr.priority-highest a, tr.priority-highest:hover a { color: #900; }
-tr.odd.priority-highest td, tr.even.priority-highest td { border-color: #e4e4e4; }
+tr.odd.priority-highest td, tr.even.priority-highest td { border-color: #ffb4b4; }
 
 tr.odd.priority-high2, table.list tbody tr.odd.priority-high2:hover { color: #a65a00; font-weight: bold; }
 tr.odd.priority-high2 { background: #FFD073; }
 tr.even.priority-high2, table.list tbody tr.even.priority-high2:hover { color: #a65a00; font-weight: bold; }
 tr.even.priority-high2 { background: #FEDD9B }
 tr.priority-high2 a, tr.priority-high2:hover a { color: #a65a00; }
-tr.odd.priority-high2 td, tr.even.priority-high2 td { border-color: #e4e4e4; }
+tr.odd.priority-high2 td, tr.even.priority-high2 td { border-color: #ff8300; }
 
 tr.odd.priority-default, table.list tbody tr.odd.priority-default:hover { color: #444; }
 tr.odd.priority-default { background: #FFFFCC; }
